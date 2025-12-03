@@ -9,4 +9,5 @@ node_modules/
 cloudinary_python.txt
 **/._*
 ./._*
-._*
+._*.venv
+.venv
