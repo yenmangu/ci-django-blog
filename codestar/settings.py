@@ -96,6 +96,10 @@ WSGI_APPLICATION = "codestar.wsgi.application"
 
 DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
+# CSRF
+
+CSRF_TRUSTED_DOMAINS = ["https://*.codeinstitute-ide.net/", "https://*.herokuapp.com"]
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
