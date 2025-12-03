@@ -7,13 +7,9 @@ assignees: ''
 
 ---
 
-**User Story**
-_"User story here"_
+**About**
+As a **role** I can **capability** so that **benefit**
 
 **Acceptance Criteria**
-
- - [ ]
-
-**Tasks**
 
  - [ ]
