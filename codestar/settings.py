@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "blog",
     "django_dbml",
+    "django_summernote",
 ]
 
 MIDDLEWARE = [
