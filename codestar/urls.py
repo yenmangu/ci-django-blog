@@ -17,9 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from blog import views as blog_vews
+
+# from blog import views as blog_vews
 
 urlpatterns = [
-    path("blog/", blog_vews.index, name="blog"),
+    path("", include("blog.urls"), name="blog-urls"),
     path("admin/", admin.site.urls),
 ]
