@@ -40,7 +40,7 @@ if IS_HEROKU_APP:
 else:
     DEBUG = True
 
-DEBUG = True
+print(f"Value of debug = {DEBUG}")
 
 ALLOWED_HOSTS = [".herokuapp.com", "127.0.0.1"]
 
