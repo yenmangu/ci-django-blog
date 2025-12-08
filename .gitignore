@@ -12,3 +12,4 @@ cloudinary_python.txt
 ._*.venv
 .venv
 pwd.txt
+blog/fixtures
