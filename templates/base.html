@@ -1,4 +1,4 @@
-{% url 'home' as home_url %}
+{% load static %} {% url 'home' as home_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -98,7 +98,5 @@
 			crossorigin="anonymous"
 		></script>
 	</body>
-	<script>
-		{% static '' %}
-	</script>
+	<script src="{% static 'js/script.js' %}"></script>
 </html>
