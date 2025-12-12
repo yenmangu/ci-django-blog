@@ -60,6 +60,8 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "crispy_forms",
+    "crispy_bootstrap5",
     "django_summernote",
     "blog",
     "django_dbml",
@@ -100,6 +102,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "codestar.wsgi.application"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
 # Database

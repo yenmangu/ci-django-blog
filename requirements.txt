@@ -2,10 +2,12 @@ asgiref==3.11.0
 bleach==6.3.0
 click==8.3.1
 colorama==0.4.6
+crispy-bootstrap5==2025.6
 cssbeautifier==1.15.4
 dj-database-url==3.0.1
 Django==5.2.9
 django-allauth==65.13.0
+django-crispy-forms==2.5
 django-dbml==0.10.1
 django-summernote==0.8.20.0
 djlint==1.36.4
