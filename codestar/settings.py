@@ -42,7 +42,7 @@ if IS_HEROKU_APP:
 else:
     DEBUG = True
 
-print(f"Value of debug = {DEBUG}")
+# print(f"Value of debug = {DEBUG}")
 
 ALLOWED_HOSTS = [".herokuapp.com", "127.0.0.1"]
 
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     "blog",
     "django_dbml",
     "django_summernote",
+    "about",
 ]
 
 MIDDLEWARE = [
