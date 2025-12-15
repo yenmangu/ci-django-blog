@@ -73,5 +73,3 @@ for (let btn of deleteButtons) {
 		deleteModal.show();
 	});
 }
-
-console.log('Script works');
