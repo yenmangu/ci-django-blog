@@ -1,0 +1,24 @@
+{
+  "name": "ci-django-blog",
+  "version": "1.0.0",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yenmangu/ci-django-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/yenmangu/ci-django-blog/issues"
+  },
+  "homepage": "https://github.com/yenmangu/ci-django-blog#readme",
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10"
+  }
+}
