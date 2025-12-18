@@ -44,7 +44,7 @@ for (let btn of editBtns) {
 
 		const event = /** @type {MouseEvent} */ (e);
 		const target = /** @type {Element} */ (event.target);
-		const commentId = target.getAttribute('comment_id');
+		const commentId = target.getAttribute('data-comment_id');
 		const commentContent =
 			document.getElementById(`comment${commentId}`)?.innerText ?? '';
 		const commentInput = /** @type {HTMLInputElement} */ (commentText);
@@ -68,7 +68,7 @@ for (let btn of deleteButtons) {
 	btn.addEventListener('click', e => {
 		const event = /**@type {MouseEvent} */ (e);
 		const target = /** @type {HTMLElement} */ (event.target);
-		const commentId = target.getAttribute('comment_id');
+		const commentId = target.getAttribute('data-comment_id');
 		deleteConfirm.href = `delete_comment/${commentId}`;
 		deleteModal.show();
 	});
