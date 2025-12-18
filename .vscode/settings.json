@@ -19,5 +19,12 @@
 	"typescript.disableAutomaticTypeAcquisition": true,
 	"editor.fontFamily": "SF Mono",
 	"javascript.preferences.importModuleSpecifier": "relative",
-	"javascript.preferences.importModuleSpecifierEnding": "js"
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"python-envs.pythonProjects": [
+		{
+			"path": "",
+			"envManager": "ms-python.python:system",
+			"packageManager": "ms-python.python:pip"
+		}
+	]
 }

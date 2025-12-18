@@ -28,5 +28,5 @@ def about(request: HttpRequest):
     return render(
         request,
         "about/about.html",
-        {"about_detail": about_detail, "collaborate_form": collab_form},
+        {"about": about_detail, "collaborate_form": collab_form},
     )
