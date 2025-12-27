@@ -25,6 +25,8 @@ class TestBlogViews(TestCase):
 
     def test_render_post_detail_with_comment_form(self):
         response = self.client.get(reverse("post_detail", args=["blog-title"]))
+        print(response.content)
+        print(response.context)
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Blog title", response.content)
         self.assertIsInstance(response.context["comment_form"], CommentForm)
