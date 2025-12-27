@@ -19,9 +19,24 @@ class TestAboutView(TestCase):
         self.about.save()
 
     def test_about_loads_with_form(self):
-        """Verfifies get reauerst for about me containing collaboration form"""
+        """Verfifies GET requerst for about me containing collaboration form"""
         response = self.client.get(reverse("about"))
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Test about", response.content)
         # print(response.context)
         self.assertIsInstance(response.context["collaborate_form"], CollaborateForm)
+
+    def test_successfull_collaboration_request_submission(self):
+        """Verfies POST request for collaboration request"""
+        # self.client.login(username="myUsername", password="myPassword")
+        post_data = {
+            "name": "test name",
+            "email": "test@test.com",
+            "message": "test message",
+        }
+        response = self.client.post(reverse("about"), post_data)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(
+            b"Collaboration request received! I endeavour to respond within 2 working days.",
+            response.content,
+        )

@@ -79,7 +79,7 @@ def post_detail(request: HttpRequest, slug):
             comment.post = post
             comment.save()
             messages.add_message(
-                request, messages.SUCCESS, "Content submitted and awaiting approval"
+                request, messages.SUCCESS, "Comment submitted and awaiting approval"
             )
 
     comment_form = CommentForm()
