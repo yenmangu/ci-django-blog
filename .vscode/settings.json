@@ -26,5 +26,21 @@
 			"envManager": "ms-python.python:system",
 			"packageManager": "ms-python.python:pip"
 		}
-	]
+	],
+	// Disable default test runners
+	"python.testing.pytestEnabled": false,
+	"python.testing.unittestEnabled": true,
+	// Configure custom test command for Django
+	"python.testing.cwd": "${workspaceFolder}",
+	"python.testing.unittestArgs": [
+		// "-v",
+		// "-s",
+		// ".", // Start discovery from the project root
+		// "-p",
+		// "test*.py" // Pattern for test files
+	],
+	"python.envFile": "${workspaceFolder}/.env",
+	"python.terminal.useEnvFile": true,
+	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+	"python.testing.autoTestDiscoverOnSavePattern": "**/*.py"
 }

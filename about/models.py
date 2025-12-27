@@ -23,7 +23,7 @@ class CollaborationRequest(models.Model):
     """
 
     name = models.CharField(max_length=200)
-    email = models.EmailField(max_length=254)
+    email = models.EmailField()
     message = models.TextField()
     read = models.BooleanField(default=False)
 
